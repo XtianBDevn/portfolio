@@ -4,10 +4,10 @@ import { BsArrowRight, BsDownload } from 'react-icons/bs';
 
 export default function Hero() {
   return (
-    <section className="flex min-h-[80vh] items-center justify-center px-6">
+    <section className="flex min-h-[80vh] items-center justify-center px-6 bg-white">
       <div className="max-w-3xl text-center">
         <motion.h1 
-          className="text-5xl font-bold tracking-tight"
+          className="text-5xl font-bold tracking-tight text-text"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
@@ -40,14 +40,14 @@ export default function Hero() {
         >
           <a
             href="#projects"
-            className="btn-bold bg-accent text-white rounded-md flex items-center gap-2"
+            className="btn-bold bg-primary text-white rounded-md flex items-center gap-2 hover:bg-primary-dark"
           >
             View Projects
             <BsArrowRight className="w-5 h-5" />
           </a>
           <a
             href="/resume.pdf"
-            className="btn-bold bg-white rounded-md flex items-center gap-2"
+            className="btn-bold bg-white text-primary rounded-md flex items-center gap-2 hover:bg-surface"
           >
             <BsDownload className="w-5 h-5" />
             Download Resume

@@ -5,10 +5,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#0f172a",     // slate-900
-        accent: "#2563eb",      // blue-600
+        primary: "#6366f1",     // indigo-500
+        'primary-dark': "#4f46e5", // indigo-600
+        accent: "#8b5cf6",      // violet-500
         muted: "#64748b",       // slate-500
         surface: "#f8fafc",     // slate-50
+        light: "#ffffff",       // white
+        text: "#1e293b",        // slate-800
       },
       borderWidth: {
         '3': '3px',
