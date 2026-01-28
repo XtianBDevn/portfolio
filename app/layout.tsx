@@ -1,24 +1,21 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import HeroSection from "./pages/HeroSection";
-import Skills from "./pages/Skills";
-import Projects from "./pages/Projects";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
+import "./globals.css";
 
-export default function App() {
+export const metadata = {
+  title: "Portfolio",
+  description: "My portfolio website",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <div className="font-sans text-base text-gray-800">
-      <Navbar />
-      <main>
-        <HeroSection />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
-      </main>
-      <Footer />
-    </div>
+    <html lang="en">
+      <body className="font-sans text-base text-gray-800">
+        {children}
+      </body>
+    </html>
   );
 }

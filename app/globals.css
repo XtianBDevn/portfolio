@@ -1,11 +1,40 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../tailwind.config.ts";
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  @apply bg-surface text-primary antialiased;
+  background-color: #f8fafc;
+  color: #0f172a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Bold stroke button styles */
+.btn-bold {
+  @apply border-3 border-black font-bold px-6 py-3 transition-all duration-200;
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.btn-bold:hover {
+  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 1);
+  transform: translate(-2px, -2px);
+}
+
+.btn-bold:active {
+  box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 1);
+  transform: translate(2px, 2px);
+}
+
+/* Bold card styles */
+.card-bold {
+  @apply border-3 border-black transition-all duration-200;
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+}
+
+.card-bold:hover {
+  box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 1);
+  transform: translate(-2px, -2px);
 }

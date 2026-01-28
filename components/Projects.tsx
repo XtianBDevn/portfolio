@@ -1,3 +1,7 @@
+'use client';
+import { motion } from 'framer-motion';
+import { BsBoxArrowUpRight, BsGithub } from 'react-icons/bs';
+
 export default function Projects() {
   const projects = [
     {
@@ -6,28 +10,54 @@ export default function Projects() {
       url: "#",
       repo: "#",
     },
-    // …more
+    {
+      title: "Project Two",
+      description: "E-commerce platform with Stripe integration",
+      url: "#",
+      repo: "#",
+    },
+    {
+      title: "Project Three",
+      description: "Real-time chat application with WebSockets",
+      url: "#",
+      repo: "#",
+    },
   ];
 
   return (
-    <section id="projects" className="py-16">
-      <h2 className="text-3xl font-bold text-center mb-8">Featured Projects</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {projects.map((proj) => (
-          <div className="group bg-white shadow-lg rounded p-6 transition hover:shadow-2xl">
-            <h3 className="text-2xl font-semi-bold mb-2">{proj.title}</h3>
-            <p className="text-gray-600 group-hover:opacity-100 opacity-80 transition">
+    <section id="projects" className="py-16 px-6">
+      <h2 className="text-3xl font-bold text-center mb-12">Featured Projects</h2>
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {projects.map((proj, index) => (
+          <motion.div 
+            key={index}
+            className="card-bold bg-white rounded-lg p-6"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: index * 0.1 }}
+          >
+            <h3 className="text-2xl font-bold mb-3">{proj.title}</h3>
+            <p className="text-gray-600 mb-6">
               {proj.description}
             </p>
-            <div className="mt-4 space-x-4">
-              <a href={proj.url} className="text-blue-600 hover:underline">
+            <div className="flex gap-4">
+              <a 
+                href={proj.url} 
+                className="flex items-center gap-2 font-semibold text-accent hover:underline"
+              >
+                <BsBoxArrowUpRight className="w-5 h-5" />
                 Live
               </a>
-              <a href={proj.repo} className="text-gray-800 hover:underline">
+              <a 
+                href={proj.repo} 
+                className="flex items-center gap-2 font-semibold hover:underline"
+              >
+                <BsGithub className="w-5 h-5" />
                 Code
               </a>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
