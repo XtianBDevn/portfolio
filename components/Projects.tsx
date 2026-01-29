@@ -5,22 +5,22 @@ import { BsBoxArrowUpRight, BsGithub } from 'react-icons/bs';
 export default function Projects() {
   const projects = [
     {
-      title: "Project One",
-      description: "React dashboard with API integration",
-      url: "#",
-      repo: "#",
+      title: "ClearFall – Tree Service Software",
+      description: "Mobile-first web app and marketing site for ClearFall, a vertical SaaS CRM built for tree removal, stump grinding, and land clearing crews.",
+      url: "https://treeremovalsoftware.online/",
+      repo: "https://github.com/XtianBDevn/clearfall",
     },
     {
-      title: "Project Two",
-      description: "E-commerce platform with Stripe integration",
-      url: "#",
-      repo: "#",
+      title: "Emergency Snow Removal RVA",
+      description: "Marketing site for a Richmond-based emergency snow and ice removal service, designed for fast booking, clear service tiers, and on-call CTAs.",
+      url: "https://rvasnowremoval.com",
+      repo: "https://github.com/XtianBDevn/rvasnowremoval.com",
     },
     {
-      title: "Project Three",
-      description: "Real-time chat application with WebSockets",
-      url: "#",
-      repo: "#",
+      title: "Alexander Law Office P.C.",
+      description: "Conversion-focused site for a Richmond criminal defense and personal injury firm, emphasizing trust, clarity, and frictionless contact.",
+      url: "https://standishalexander.com",
+      repo: "https://github.com/XtianBDevn/standishalexander.com",
     },
   ];
 

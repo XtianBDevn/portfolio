@@ -28,6 +28,12 @@ export default function Contact() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.2 }}
+        onSubmit={(e) => {
+          e.preventDefault();
+          if (typeof window !== 'undefined') {
+            window.location.href = 'mailto:christian.bryantrva@outlook.com';
+          }
+        }}
       >
         <input
           type="text"

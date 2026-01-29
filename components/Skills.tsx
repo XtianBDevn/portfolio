@@ -7,11 +7,17 @@ import {
   SiNodedotjs, 
   SiPostgresql, 
   SiPrisma,
-  SiTailwindcss
+  SiTailwindcss,
+  SiAngular,
+  SiVuedotjs,
+  SiExpress,
+  SiMongodb,
+  SiGraphql
 } from 'react-icons/si';
 import { BsCloudArrowUp } from 'react-icons/bs';
 
 const skills = [
+
   {
     name: "Next.js",
     icon: SiNextdotjs,
@@ -23,6 +29,16 @@ const skills = [
     description: "UI component library"
   },
   {
+    name: "Angular",
+    icon: SiAngular,
+    description: "Front-end framework"
+  },
+  {
+    name: "Vue",
+    icon: SiVuedotjs,
+    description: "Front-end framework"
+},
+  {
     name: "TypeScript",
     icon: SiTypescript,
     description: "Type-safe JavaScript"
@@ -31,6 +47,21 @@ const skills = [
     name: "Node.js",
     icon: SiNodedotjs,
     description: "Server-side runtime"
+  },
+  {
+    name: "Express",
+    icon: SiExpress,
+    description: "Node.js web framework"
+    },
+  {
+    name: "MongoDB",
+    icon: SiMongodb,
+    description: "NoSQL database" 
+  },
+    {
+    name: "GraphQL",
+    icon: SiGraphql,
+    description: "API query language"
   },
   {
     name: "PostgreSQL",

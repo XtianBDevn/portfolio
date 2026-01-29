@@ -21,6 +21,13 @@ export default function Navbar() {
             Projects
           </motion.a>
           <motion.a 
+            href="/christian-bryant-resume.pdf" 
+            className="font-semibold hover:text-primary transition-colors flex items-center gap-2"
+            whileHover={{ scale: 1.05 }}
+          >
+            Resume
+          </motion.a>
+          <motion.a 
             href="#contact" 
             className="font-semibold hover:text-primary transition-colors flex items-center gap-2"
             whileHover={{ scale: 1.05 }}

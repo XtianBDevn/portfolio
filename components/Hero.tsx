@@ -4,8 +4,21 @@ import { BsArrowRight, BsDownload } from 'react-icons/bs';
 
 export default function Hero() {
   return (
+  
     <section className="flex min-h-[80vh] items-center justify-center px-6 bg-white">
       <div className="max-w-3xl text-center">
+        <motion.div
+          className="mx-auto mb-6 h-32 w-32 rounded-full overflow-hidden border-4 border-primary/40 shadow-lg bg-surface flex items-center justify-center"
+          initial={{ opacity: 0, scale: 0.9, y: 10 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ delay: 0.15 }}
+        >
+          <img
+            src="/christian-avatar.jpg"
+            alt="Christian Bryant"
+            className="h-full w-full object-cover"
+          />
+        </motion.div>
         <motion.h1 
           className="text-5xl font-bold tracking-tight text-text"
           initial={{ opacity: 0, y: 20 }}
@@ -46,7 +59,7 @@ export default function Hero() {
             <BsArrowRight className="w-5 h-5" />
           </a>
           <a
-            href="/resume.pdf"
+            href="/christian-bryant-resume.pdf"
             className="btn-bold bg-white text-primary rounded-md flex items-center gap-2 hover:bg-surface"
           >
             <BsDownload className="w-5 h-5" />
